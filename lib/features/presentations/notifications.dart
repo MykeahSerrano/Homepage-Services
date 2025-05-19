@@ -17,9 +17,7 @@ class NotificationsPage extends StatelessWidget {
         elevation: 0,
         surfaceTintColor: Colors.transparent,
         title: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 16.0,
-          ), // Adjusted padding
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(
             children: [
               GestureDetector(
@@ -35,7 +33,6 @@ class NotificationsPage extends StatelessWidget {
                   width: 16,
                 ),
               ),
-              const SizedBox(width: 10), // Space between icon and title
               Expanded(
                 child: Center(
                   child: Text(
@@ -60,13 +57,14 @@ class NotificationsPage extends StatelessWidget {
           ),
         ),
         bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(45.0),
+          preferredSize: const Size.fromHeight(50.0),
           child: Column(
             children: [
               Container(height: 1, color: const Color(0xFFE0E0E0)),
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 20.0,
+                  vertical: 2.5,
                 ), // Adjusted padding
                 child: Row(
                   mainAxisAlignment:
